@@ -1,0 +1,202 @@
+.home-about-us {
+  height: 632px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .about-us {
+    border: 2px solid rgb(60, 60, 60);
+    width: 898px;
+    height: 308px;
+    position: relative;
+    z-index: 44;
+    .us-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: rgb(60, 60, 60);
+      height: 100%;
+      h1 {
+        background-color: white;
+        width: 416px;
+        text-align: center;
+        top: -40px;
+        position: absolute;
+        font-size: 56px;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 46;
+      }
+     .us-content {
+       padding-top: 70px;
+       font-size: 16px;
+       font-weight: lighter;
+       width: 553px;
+       height: 206px;
+       text-align: center;
+       line-height: 1.5;
+       .us-item {
+         padding-bottom: 25px;
+       }
+     }
+    }
+  }
+}
+
+
+
+
+
+//Services
+.home-services {
+  //background-image: url("../../images/services.png");
+  //background-repeat: no-repeat;
+  //background-attachment: fixed;
+  //background-size: cover;
+  position: relative;
+  z-index: 4;
+    img {
+      height: 488px;
+    }
+    .wrap-container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      .container-flex {
+        position: absolute;
+        border: 2px solid #ffffff;
+
+        width: 895px;
+        height: 247px;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+
+        h1 {
+          background-color: transparent;
+          width: 416px;
+          text-align: center;
+          height: 50px;
+          top: -40px;
+          position: absolute;
+          font-size: 56px;
+          font-weight: bold;
+          text-transform: uppercase;
+          z-index: 20;
+        }
+        .us-content {
+          padding-top: 65px;
+          font-size: 16px;
+          font-weight: lighter;
+          width: 550px;
+          height: 143px;
+          text-align: center;
+          line-height: 1.618;
+
+        }
+      }
+    }
+
+}
+
+//home-we
+.home-we {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1414px;
+  margin-bottom: 115px;
+  .we-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border: 2px solid rgb(60, 60, 60);
+    width: 898px;
+    height: 1178px;
+    h1 {
+      background-color: white;
+      width: 425px;
+      text-align: center;
+      top: -40px;
+      position: absolute;
+      font-size: 56px;
+      font-weight: bold;
+      text-transform: uppercase;
+     height: fit-content;
+      bottom: 100px;
+    }
+    .flex-wrap {
+      padding-top: 75px;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .flex-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        color: rgb(60, 60, 60);
+        h2 {
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 33px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 1.849;
+        }
+
+      }
+      .flex-item--1 {
+        height: 266px;
+      }
+      .flex-item--2 {
+        height: 236px;
+      }
+      .flex-item--3 {
+        height: 260px;
+      }
+    }
+
+  }
+}
+
+
+// home-list-work
+
+.home-list-work {
+  height: 484px;
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    .container-img {
+      img {
+        position: absolute;
+      }
+      p {
+        position: absolute;
+        top: 0;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 56px;
+      }
+    }
+  }
+  .flex-container > div {
+    margin-right: 20px;
+  }
+}

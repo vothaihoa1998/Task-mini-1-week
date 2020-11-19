@@ -5,7 +5,9 @@ a {
   }
   color: white;
 }
-
+body {
+  font-family: 'Lato', sans-serif ;
+}
 ul, ol, p {
   padding: 0;
   margin: 0;
@@ -21,4 +23,57 @@ h1, h2, h3, h4, h5 {
 
 img {
   max-width: 100%;
+}
+.slick-dots li button {
+  height: 25px !important;
+}
+.slick-dots li button:before {
+  //font-size: 10px !important;
+  color: transparent !important;
+  position: absolute;
+  content: "" !important;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  width: 10px !important;
+  height: 10px !important;
+  opacity: 0.25;
+  z-index: 57;
+  //@media screen and(max-width: 320px) {
+  //  width: 8px !important;
+  //  height: 8px !important;
+  //  font-size: 50% !important;
+  //}
+}
+
+.slick-dots li {
+  height: 12px !important;
+  width: 12px !important;
+}
+.slick-dots li.slick-active {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 12px !important;
+  height: 12px !important;
+  z-index: 50;
+  //@media screen and(max-width: 320px) {
+  //  width: 8px ;
+  //  height: 8px ;
+  //}
+}
+.home-courses-events .slick-dots {
+  display: inline !important;
+}
+// btn pause/play
+.btn-pause-play{
+  background-color: transparent;
+  position: absolute;
+  color: rgb(218, 178, 121);
+  border: none;
+  font-size: 15px;
+  outline:none;
+  z-index: 66;
+  @media screen and(max-width: 320px) {
+    font-size: 100% !important;
+  }
 }
