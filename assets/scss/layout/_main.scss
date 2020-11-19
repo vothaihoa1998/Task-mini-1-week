@@ -57,6 +57,7 @@
   z-index: 4;
     img {
       height: 488px;
+      object-fit: cover;
     }
     .wrap-container {
       position: absolute;
@@ -176,27 +177,36 @@
 // home-list-work
 
 .home-list-work {
-  height: 484px;
+  width: 100%;
+  margin-left: -10px;
+  //height: 484px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   .flex-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     position: relative;
     .container-img {
+      position: relative;
       img {
-        position: absolute;
+        object-fit: cover;
+        height: 237px;
+        z-index: 15;
+        display: block;
       }
       p {
         position: absolute;
-        top: 0;
+        top: 169px;
+        left: 49px;
         text-transform: uppercase;
         color: #ffffff;
-        font-size: 56px;
+        font-size: 34px;
+        z-index: 15;
       }
     }
   }
   .flex-container > div {
-    margin-right: 20px;
+    margin: 5px;
   }
 }

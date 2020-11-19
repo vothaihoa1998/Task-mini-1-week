@@ -7258,6 +7258,7 @@ a:hover {
 
 body {
   font-family: "Lato", sans-serif;
+  position: relative;
 }
 
 ul, ol, p {
@@ -7326,17 +7327,29 @@ img {
   }
 }
 
+.btn {
+  color: white;
+  text-align: center;
+  width: 391px;
+  height: 54px;
+  background: #3c3c3c;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
 .home-header .header-slick .slick-item {
   position: relative;
   z-index: 36;
 }
 .home-header .header-slick .slick-item img {
   width: 100%;
+  height: 1072px;
+  object-fit: cover;
 }
 .home-header .header-content {
   position: absolute;
   z-index: 40;
-  top: 26%;
+  top: 286px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -7347,7 +7360,7 @@ img {
   align-items: center;
 }
 .home-header .header-content .content-wrap .img-header {
-  padding-bottom: 8%;
+  padding-bottom: 94px;
 }
 .home-header .header-content .content-wrap .wrap-item {
   text-transform: uppercase;
@@ -7361,7 +7374,7 @@ img {
 .home-header .header-content .content-wrap .wrap-item h4 {
   font-size: 54px;
   font-weight: bold;
-  padding-bottom: 4.5%;
+  padding-bottom: 32px;
   width: 591px;
 }
 .home-header .header-content .content-wrap .wrap-item p {
@@ -7370,7 +7383,7 @@ img {
   line-height: 1.933;
   width: 576px;
   height: 70px;
-  padding-bottom: 23%;
+  padding-bottom: 244px;
 }
 .home-header .slick-dotted.slick-slider {
   margin-bottom: 0 !important;
@@ -7437,6 +7450,7 @@ img {
 }
 .home-services img {
   height: 488px;
+  object-fit: cover;
 }
 .home-services .wrap-container {
   position: absolute;
@@ -7545,27 +7559,38 @@ img {
 }
 
 .home-list-work {
-  height: 484px;
+  width: 100%;
+  margin-left: -10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 .home-list-work .flex-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  position: relative;
+}
+.home-list-work .flex-container .container-img {
   position: relative;
 }
 .home-list-work .flex-container .container-img img {
-  position: absolute;
+  object-fit: cover;
+  height: 237px;
+  z-index: 15;
+  display: block;
 }
 .home-list-work .flex-container .container-img p {
   position: absolute;
-  top: 0;
+  top: 169px;
+  left: 49px;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 56px;
+  font-size: 34px;
+  z-index: 15;
 }
 .home-list-work .flex-container > div {
-  margin-right: 20px;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

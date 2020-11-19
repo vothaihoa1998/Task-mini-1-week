@@ -7,6 +7,7 @@ a {
 }
 body {
   font-family: 'Lato', sans-serif ;
+  position: relative;
 }
 ul, ol, p {
   padding: 0;
@@ -76,4 +77,14 @@ img {
   @media screen and(max-width: 320px) {
     font-size: 100% !important;
   }
+}
+
+.btn {
+  color: white;
+  text-align: center;
+  width: 391px;
+  height: 54px;
+  background: rgb(60, 60, 60);
+  font-size: 16px;
+  line-height: 1.2;
 }
