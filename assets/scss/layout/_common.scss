@@ -26,7 +26,17 @@ img {
   max-width: 100%;
 }
 .slick-dots li button {
-  height: 25px !important;
+  height: 22px !important;
+  @media #{$info-tablet} {
+    height: 18px !important;
+  }
+  @media #{$info-phone} {
+    height: 15px !important;
+  }
+  @media #{$info-phone-4} {
+    height: 19px !important;
+  }
+
 }
 .slick-dots li button:before {
   //font-size: 10px !important;
@@ -39,16 +49,19 @@ img {
   height: 10px !important;
   opacity: 0.25;
   z-index: 57;
-  //@media screen and(max-width: 320px) {
-  //  width: 8px !important;
-  //  height: 8px !important;
-  //  font-size: 50% !important;
-  //}
+  @media #{$info-phone-4} {
+    width: 6px !important;
+    height: 6px !important;
+  }
 }
 
 .slick-dots li {
   height: 12px !important;
   width: 12px !important;
+  @media #{$info-phone-4} {
+    width: 6px !important;
+    height: 6px !important;
+  }
 }
 .slick-dots li.slick-active {
   background-color: #fff;
@@ -57,10 +70,11 @@ img {
   width: 12px !important;
   height: 12px !important;
   z-index: 50;
-  //@media screen and(max-width: 320px) {
-  //  width: 8px ;
-  //  height: 8px ;
-  //}
+  @media #{$info-phone-4} {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
 }
 .home-courses-events .slick-dots {
   display: inline !important;
@@ -74,17 +88,31 @@ img {
   font-size: 15px;
   outline:none;
   z-index: 66;
-  @media screen and(max-width: 320px) {
-    font-size: 100% !important;
+  @media #{$info-phone-4} {
+    font-size: 10px;
   }
 }
 
 .btn {
   color: white;
   text-align: center;
+  text-transform: uppercase;
   width: 391px;
   height: 54px;
   background: rgb(60, 60, 60);
   font-size: 16px;
   line-height: 1.2;
+  cursor: pointer;
+  transition: width 4s, height 4s, transform 2s;
+  &:hover {
+    border: none;
+    background: linear-gradient(to right, rgb(201, 147, 60) , rgb(217, 176, 118));
+  }
+  @media #{$info-phone} {
+    width: 300px;
+  }
+  @media #{$info-phone-4} {
+    width: 180px;
+    height: 40px;
+  }
 }

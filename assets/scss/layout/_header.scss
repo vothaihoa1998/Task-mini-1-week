@@ -7,6 +7,9 @@
         width: 100%;
         height: 1072px;
         object-fit: cover;
+        @media #{$info-phone} {
+          height: 536px;
+        }
       }
     }
 
@@ -20,13 +23,38 @@
     //height: 63%;
     display: flex;
     justify-content: center;
+    @media #{$info-phone} {
+      top: 120px;
+      height: 295.5px;
+    }
+    @media #{$info-phone-4} {
+      top: 140px;
+    }
+
     .content-wrap {
       display: flex;
       flex-direction: column;
       align-items: center;
+      .img-mouse {
+        transition: width 2s, height 2s, transform 2s;
+        &:hover {
+          transform: translateY(65px);
+        }
+        @media #{$info-phone-4} {
+          width: 15px;
+          height: 25px;
+        }
+      }
       .img-header {
         //padding-bottom: 8%;
         padding-bottom: 94px;
+        @media #{$info-phone} {
+          padding-bottom: 40px;
+        }
+        @media #{$info-phone-4} {
+          width: 32.5px;
+          height: 40px;
+        }
       }
       .wrap-item {
         text-transform: uppercase;
@@ -36,13 +64,17 @@
         h1 {
           font-size: 54px;
           font-weight: bold;
-        }
-        h4 {
-          font-size: 54px;
-          font-weight: bold;
           //padding-bottom: 4.5%;
           padding-bottom: 32px;
           width: 591px;
+          @media #{$info-phone} {
+            font-size: 25px;
+            padding-bottom: 16px;
+          }
+          @media #{$info-phone-4} {
+            font-size: 20px;
+            width: auto;
+          }
         }
         p {
           font-size: 15px;
@@ -52,6 +84,16 @@
           height: 70px;
           //padding-bottom: 23%;
           padding-bottom: 244px;
+          @media #{$info-phone} {
+            font-size: 10px;
+            width: auto;
+            padding-bottom:40px;
+          }
+          @media #{$info-phone-4} {
+            font-size: 9px;
+            width: auto;
+            padding-bottom:62px;
+          }
         }
       }
 
@@ -65,9 +107,18 @@
   .slick-dots {
     width: 150px !important;
     height: 17px !important;
-    bottom: 4% !important;
+    bottom: 2% !important;
     left: 47% !important;
     text-align: left !important;
+    @media #{$info-tablet} {
+      left: 44% !important;
+    }
+    @media #{$info-phone} {
+      left: 42.5% !important;
+    }
+    @media #{$info-phone-4} {
+      left: 36% !important;
+    }
   }
   .slick-dots li.slick-active button:before {
     color: #ffffff !important;
