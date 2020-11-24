@@ -1,15 +1,13 @@
 .home-about-us {
-  height: 632px;
+  //height: 631px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   @media #{$info-phone} {
-    height: 450px;
+    //height: 450px;
   }
   .about-us {
-    padding:  0 20px;
-    margin: 20px;
+    margin: 158px 15px;
     border: 2px solid rgb(60, 60, 60);
     width: 898px;
     height: 308px;
@@ -19,12 +17,17 @@
       width: 650px;
     }
     @media #{$info-phone} {
-      width: auto;
-      //width: 400px;
-      height: 280px;
+      width: 450px;
+      height: 250px;
+    }
+    @media screen and (max-width: 500px) {
+      width: 350px;
+      height: 300px;
+      margin: 100px 15px;
     }
     @media #{$info-phone-4} {
-      height: 360px;
+      width: 300px;
+      margin: 80px 5px;
     }
 
     .us-wrap {
@@ -32,11 +35,11 @@
       flex-direction: column;
       align-items: center;
       color: rgb(60, 60, 60);
-      height: 100%;
       h1 {
         letter-spacing: 3.1px;
+        color: rgb(60, 60, 60);
         background-color: white;
-        width: 425px;
+        width: 419px;
         text-align: center;
         top: -24px;
         position: absolute;
@@ -51,13 +54,18 @@
         }
       }
      .us-content {
-       padding: 70px 10px 0 10px;
+       padding-top: 70px;
        font-size: 16px;
        font-weight: 300 ;
-       width: 600px;
-       height: 206px;
        text-align: center;
        line-height: 1.5;
+       @media #{$info-tablet} {
+         padding-left: 20px;
+         padding-right: 20px;
+       }
+       @media #{$info-phone-4} {
+         padding-top: 50px;
+       }
        .us-item {
          padding-bottom: 25px;
          @media #{$info-phone} {
@@ -68,21 +76,14 @@
          width: auto;
          font-size: 12px;
        }
-       @media screen and (max-width: 450px){
-         padding: 35px 10px 0 10px;
-       }
+
      }
     }
   }
 }
 
-
 //Services
 .home-services {
-  //background-image: url("../../images/services.png");
-  //background-repeat: no-repeat;
-  //background-attachment: fixed;
-  //background-size: cover;
   position: relative;
   z-index: 4;
     img {
@@ -102,12 +103,8 @@
       height: 100%;
       top: 0;
       .container-flex {
-        //position: absolute;
-        padding: 20px;
         border: 2px solid #ffffff;
-        margin: 20px;
         width: 895px;
-        height: 247px;
         z-index: 5;
         display: flex;
         flex-direction: column;
@@ -117,49 +114,43 @@
           width: 650px;
         }
         @media #{$info-phone} {
-          width: auto;
+          width: 450px;
+        }
+        @media screen and (max-width: 500px) {
+          width: 350px;
         }
         @media #{$info-phone-4} {
-          padding: 0 10px;
-
+          width: 278px;
         }
         legend {
           background-color: transparent;
           letter-spacing: 3.1px;
-          width: 425px;
+          width: 419px;
           text-align: center;
           font-size: 34px;
           font-weight: bold;
           text-transform: uppercase;
           @media #{$info-phone} {
-            width: 300px;
             font-size: 25px;
+            width: 250px;
           }
           @media #{$info-phone-4} {
             width: 180px;
           }
         }
-
-        //h1 {
-        //  background-color: transparent;
-        //  width: 425px;
-        //  text-align: center;
-        //  height: 50px;
-        //  top: -24px;
-        //  position: absolute;
-        //  font-size: 34px;
-        //  font-weight: bold;
-        //  text-transform: uppercase;
-        //  z-index: 20;
-        //}
         .us-content {
-          padding-top: 55px;
+          padding-top: 45px;
+          padding-bottom: 20px;
           font-size: 16px;
           font-weight: lighter;
-          width: 590px;
+          width: 610px;
           height: 143px;
           text-align: center;
           line-height: 1.618;
+          @media #{$info-tablet} {
+            padding-left: 20px;
+            padding-right: 20px;
+          }
           @media #{$info-phone} {
             width: auto;
             font-size: 12px;
@@ -168,12 +159,6 @@
           }
           @media #{$info-phone-4} {
             padding-top: 25px;
-          }
-          p {
-            width: 610px;
-            @media #{$info-phone} {
-              width: auto;
-            }
           }
         }
       }
@@ -186,37 +171,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 1414px;
-  margin-bottom: 115px;
-  @media #{$info-tablet} {
-    margin-bottom: 0;
-  }
+  //justify-content: center;
   .we-container {
-    padding: 20px 30px;
-    margin: 10px;
+    margin: 116px 15px 108px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     border: 2px solid rgb(60, 60, 60);
     width: 898px;
-    height: 1178px;
     @media #{$info-tablet} {
       width: 650px;
     }
     @media #{$info-phone} {
       width: 450px;
     }
-    @media screen and (max-width: 550px){
-      width: 300px;
+    @media screen and (max-width: 500px) {
+      width: 350px;
     }
     @media #{$info-phone-4} {
       width: auto;
     }
     h1 {
       background-color: white;
-      width: 425px;
+      color: rgb(60, 60, 60);
+      width: 419px;
       text-align: center;
       letter-spacing: 3.1px;
       top: -24px;
@@ -225,7 +204,6 @@
       font-weight: bold;
       text-transform: uppercase;
       height: fit-content;
-      bottom: 100px;
 
       @media #{$info-phone} {
         top: -14px;
@@ -237,11 +215,13 @@
       }
     }
     .flex-wrap {
-      padding-top: 75px;
-      height: 90%;
+      padding-top: 120px;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      @media #{$info-tablet} {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
       .flex-item {
         display: flex;
         flex-direction: column;
@@ -261,6 +241,7 @@
         p {
           font-size: 14px;
           line-height: 1.849;
+          font-weight: 300;
           @media #{$info-phone} {
             font-size: 12px;
           }
@@ -268,19 +249,22 @@
 
       }
       .flex-item--1 {
-        height: 266px;
+        height: 268px;
+        margin-bottom: 105px;
         @media #{$info-phone} {
           height: 310px;
         }
       }
       .flex-item--2 {
-        height: 236px;
+        height: 238px;
+        margin-bottom: 90px;
         @media #{$info-phone} {
           height: 280px;
         }
       }
       .flex-item--3 {
-        height: 260px;
+        height: 263px;
+        margin-bottom: 85px;
         @media #{$info-phone} {
           height: 300px;
         }
@@ -295,32 +279,39 @@
 
 .home-list-work {
   width: 100%;
-  //margin-left: -10px;
-  //height: 484px;
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-bottom: 128px;
   .flex-container {
     display: flex;
-    //flex-wrap: wrap;
     flex-direction: row;
-    //justify-content: center;
     position: relative;
-    //.container-img--01 {
-    //  width: 28.84%;
-    //}
-    .container-img--02 {
-      @media #{$info-tablet} {
-        //width: 548px;
-      }
-    }
-    //.container-img--03 {
-    //  width: 28%;
-    //}
+
     @media #{$info-tablet} {
       flex-wrap: wrap;
       justify-content: center;
     }
+
+    .container-img--01 {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      @media #{$info-tablet} {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+    .container-img--02 {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      @media #{$info-tablet} {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+
+
+
 
     .container-img {
       position: relative;
@@ -334,7 +325,6 @@
         cursor: pointer;
         transition: width 2s, height 2s, transform 2s;
         &:hover {
-          //transform: rotate(5deg);
           transform: scale(1.1);
         }
         @media #{$info-tablet} {
@@ -353,6 +343,7 @@
         text-transform: uppercase;
         color: #ffffff;
         font-size: 34px;
+        font-weight: 700;
         z-index: 15;
         &:hover {
           color: rgb(217, 176, 118);
@@ -367,44 +358,72 @@
       }
     }
   }
-  .flex-container > div {
-    margin: 5px;
-  }
 }
 
 
 .home-contact-us {
-  height: 494px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  .home-about-us {
-    padding-top: 80px;
-    .about-us {
-      height: 293px;
+  margin-bottom: 60px;
+  .contact-us-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(60, 60, 60);
+    width: 898px;
+    position: relative;
+    @media #{$info-tablet} {
+      width: 650px;
+    }
+    @media #{$info-phone} {
+      width: 450px;
+    }
+    @media screen and (max-width: 500px) {
+      width: 350px;
+    }
+    @media #{$info-phone-4} {
+      width: 300px;
+    }
+    h1 {
+      letter-spacing: 3.1px;
+      color: rgb(60, 60, 60);
+      background-color: white;
+      width: 419px;
+      text-align: center;
+      top: -24px;
+      position: absolute;
+      font-size: 34px;
+      font-weight: bold;
+      text-transform: uppercase;
       @media #{$info-phone} {
-        width: 350px;
-      }
-      @media #{$info-phone-4} {
+        font-size: 25px;
+        top: -14px;
         width: 250px;
       }
-      .us-content {
-        padding-top: 70px;
-        width: 580px;
-        @media #{$info-phone} {
-          width: 300px;
-        }
-        @media #{$info-phone-4} {
-          width: 200px;
-          padding-top: 40px;
-        }
-        .us-item {
-          padding-bottom: 40px;
-        }
+    }
+    .item-content {
+      text-align: center;
+      padding-top: 58px;
+      font-size: 16px;
+      font-weight: 300;
+      color: rgb(60, 60, 60);
+      line-height: 1.618;
+      padding-bottom: 40px;
+      @media #{$info-tablet} {
+        padding-left: 20px;
+        padding-right: 20px;
       }
+      @media #{$info-phone-4} {
+        font-size: 14px;
+      }
+    }
+    .btn {
+      margin-bottom: 40px;
     }
 
   }
+
 }
 
 //footer
