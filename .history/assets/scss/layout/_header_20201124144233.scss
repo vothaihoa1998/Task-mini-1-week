@@ -18,7 +18,7 @@
   .header-content {
     position: absolute;
     z-index: 40;
-    top: 286px;
+    top: 386px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -131,7 +131,7 @@
           }
         }
       }
-      @keyframes down {
+      @-webkit-keyframes down {
         0% {
           transform: translate(0);
         }

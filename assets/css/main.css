@@ -7455,7 +7455,7 @@ img {
     }
   }
 }
-@-webkit-keyframes down {
+@keyframes down {
   0% {
     transform: translate(0);
   }
