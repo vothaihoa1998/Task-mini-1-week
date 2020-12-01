@@ -20,8 +20,6 @@
     z-index: 40;
     top: 286px;
     width: 100%;
-    display: flex;
-    justify-content: center;
     @media #{$info-phone} {
       top: 190px;
       //height: 295.5px;
@@ -31,9 +29,8 @@
     }
 
     .content-wrap {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin: auto;
+      width: fit-content;
       .img-mouse {
         transition: width 2s, height 2s, transform 2s;
         &:hover {
@@ -45,9 +42,12 @@
         }
       }
       .img-header {
-        padding-bottom: 84px;
+        margin-bottom: 84px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         @media #{$info-phone} {
-          padding-bottom: 56px;
+          margin-bottom: 56px;
         }
         @media #{$info-phone-4} {
           width: 42px;
@@ -65,11 +65,11 @@
         h1 {
           font-size: 54px;
           font-weight: bold;
-          padding-bottom: 32px;
+          margin-bottom: 32px;
           //width: 591px;
           @media #{$info-phone} {
             font-size: 25px;
-            padding-bottom: 21px;
+            margin-bottom: 21px;
           }
           @media #{$info-phone-4} {
             width: auto;
@@ -80,14 +80,14 @@
           font-weight: revert;
           line-height: 1.933;
           //width: 576px;
-          padding-bottom: 250px;
+          margin-bottom: 250px;
           @media #{$info-phone} {
             font-size: 12px;
             width: auto;
-            padding-bottom:155px;
+            margin-bottom:145px;
           }
           @media #{$info-phone-4} {
-            padding-bottom: 130px;
+            margin-bottom: 130px;
           }
         }
       }
@@ -99,6 +99,9 @@
         border-radius: 50px;
         position: relative;
         animation: down 1.5s infinite;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         &::before {
           content: '';
           width: 6px;
