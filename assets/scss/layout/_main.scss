@@ -87,7 +87,7 @@ main {
   .services {
     position: relative;
     z-index: 4;
-    &__img {
+    img {
       height: 488px;
       object-fit: cover;
       @media #{$info-phone} {

@@ -7569,12 +7569,12 @@ main .services {
   position: relative;
   z-index: 4;
 }
-main .services__img {
+main .services img {
   height: 488px;
   object-fit: cover;
 }
 @media only screen and (max-width : 767px) {
-  main .services__img {
+  main .services img {
     height: 380px;
   }
 }
