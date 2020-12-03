@@ -7380,6 +7380,8 @@ img {
   font-size: 54px;
   font-weight: bold;
   margin-bottom: 32px;
+  letter-spacing: 5.2px;
+  white-space: pre-line;
 }
 @media only screen and (max-width : 767px) {
   .header__item h1 {
@@ -7397,6 +7399,7 @@ img {
   font-weight: revert;
   line-height: 1.933;
   margin-bottom: 250px;
+  white-space: pre-line;
 }
 @media only screen and (max-width : 767px) {
   .header__item p {
@@ -7495,10 +7498,10 @@ main .about-us__container {
     margin: 80px auto;
   }
 }
-main .about-us__container h1 {
+main .about-us__container h2 {
   letter-spacing: 3.1px;
   color: #3c3c3c;
-  background-color: white;
+  background-color: #ffffff;
   width: 419px;
   text-align: center;
   top: -24px;
@@ -7510,12 +7513,12 @@ main .about-us__container h1 {
   z-index: 16;
 }
 @media only screen and (max-width : 990px) {
-  main .about-us__container h1 {
+  main .about-us__container h2 {
     left: 115.5px;
   }
 }
 @media only screen and (max-width : 767px) {
-  main .about-us__container h1 {
+  main .about-us__container h2 {
     top: -14px;
     left: 100px;
     width: 250px;
@@ -7523,12 +7526,12 @@ main .about-us__container h1 {
   }
 }
 @media screen and (max-width: 500px) {
-  main .about-us__container h1 {
+  main .about-us__container h2 {
     left: 50px;
   }
 }
 @media only screen and (max-width : 375px) {
-  main .about-us__container h1 {
+  main .about-us__container h2 {
     left: 25px;
   }
 }
@@ -7539,6 +7542,9 @@ main .about-us__wrap {
   font-weight: 300;
   text-align: center;
   line-height: 1.5;
+}
+main .about-us__wrap .about-us__item {
+  white-space: pre-line;
 }
 @media only screen and (max-width : 990px) {
   main .about-us__wrap {
@@ -7566,43 +7572,39 @@ main .about-us__item {
   }
 }
 main .services {
-  position: relative;
-  z-index: 4;
-}
-main .services img {
+  background-image: url("../images/services.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 488px;
-  object-fit: cover;
 }
 @media only screen and (max-width : 767px) {
-  main .services img {
+  main .services {
     height: 380px;
   }
 }
 main .services__container {
-  position: absolute;
   width: 100%;
-  top: 127px;
+  padding-top: 110px;
 }
 @media only screen and (max-width : 767px) {
   main .services__container {
-    top: 80px;
+    padding-top: 80px;
   }
 }
 @media screen and (max-width: 500px) {
   main .services__container {
-    top: 60px;
+    padding-top: 60px;
   }
 }
 @media only screen and (max-width : 375px) {
   main .services__container {
-    top: 50px;
+    padding-top: 50px;
   }
 }
 main .services__flex {
   margin: auto;
   border: 2px solid #ffffff;
   width: 874px;
-  z-index: 5;
   color: #ffffff;
 }
 @media only screen and (max-width : 990px) {
@@ -7673,6 +7675,9 @@ main .services__content {
     margin-top: 25px;
   }
 }
+main .services__item {
+  white-space: pre-line;
+}
 main .we {
   margin: 116px 0 108px 0;
 }
@@ -7702,8 +7707,8 @@ main .we__container {
     width: 300px;
   }
 }
-main .we__container h1 {
-  background-color: white;
+main .we__container h2 {
+  background-color: #ffffff;
   color: #3c3c3c;
   width: 419px;
   text-align: center;
@@ -7717,12 +7722,12 @@ main .we__container h1 {
   height: fit-content;
 }
 @media only screen and (max-width : 990px) {
-  main .we__container h1 {
+  main .we__container h2 {
     left: 115.5px;
   }
 }
 @media only screen and (max-width : 767px) {
-  main .we__container h1 {
+  main .we__container h2 {
     top: -14px;
     left: 100px;
     width: 250px;
@@ -7730,12 +7735,12 @@ main .we__container h1 {
   }
 }
 @media screen and (max-width: 500px) {
-  main .we__container h1 {
+  main .we__container h2 {
     left: 50px;
   }
 }
 @media only screen and (max-width : 375px) {
-  main .we__container h1 {
+  main .we__container h2 {
     left: 25px;
   }
 }
@@ -7752,14 +7757,14 @@ main .we__item {
   text-align: center;
   color: #3c3c3c;
 }
-main .we__item h2 {
+main .we__item h3 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
   letter-spacing: 3.1px;
 }
 @media only screen and (max-width : 767px) {
-  main .we__item h2 {
+  main .we__item h3 {
     font-size: 18px;
   }
 }
@@ -7767,37 +7772,38 @@ main .we__item p {
   font-size: 14px;
   line-height: 1.849;
   font-weight: 300;
+  white-space: pre-line;
 }
 @media only screen and (max-width : 767px) {
   main .we__item p {
     font-size: 12px;
   }
 }
-main .we__item--1 {
+main .we__item--01 {
   margin-bottom: 105px;
 }
-main .we__item--1 h2 {
+main .we__item--01 h3 {
   margin-bottom: 37px;
 }
-main .we__item--1 .img-we-01 {
+main .we__item--01 .img-we-01 {
   margin-bottom: 40px;
 }
-main .we__item--2 {
+main .we__item--02 {
   margin-bottom: 90px;
 }
-main .we__item--2 h2 {
+main .we__item--02 h3 {
   margin-bottom: 42px;
 }
-main .we__item--2 .img-we-02 {
+main .we__item--02 .img-we-02 {
   margin-bottom: 38px;
 }
-main .we__item--3 {
+main .we__item--03 {
   margin-bottom: 85px;
 }
-main .we__item--3 h2 {
+main .we__item--03 h3 {
   margin-bottom: 45px;
 }
-main .we__item--3 .img-we-03 {
+main .we__item--03 .img-we-03 {
   margin-bottom: 44px;
 }
 main .list-work {
@@ -7923,10 +7929,10 @@ main .contact-us__flex {
     width: 300px;
   }
 }
-main .contact-us__flex h1 {
+main .contact-us__flex h2 {
   letter-spacing: 3.1px;
   color: #3c3c3c;
-  background-color: white;
+  background-color: #ffffff;
   width: 419px;
   text-align: center;
   top: -24px;
@@ -7937,12 +7943,12 @@ main .contact-us__flex h1 {
   text-transform: uppercase;
 }
 @media only screen and (max-width : 990px) {
-  main .contact-us__flex h1 {
+  main .contact-us__flex h2 {
     left: 115.5px;
   }
 }
 @media only screen and (max-width : 767px) {
-  main .contact-us__flex h1 {
+  main .contact-us__flex h2 {
     top: -14px;
     left: 100px;
     width: 250px;
@@ -7950,12 +7956,12 @@ main .contact-us__flex h1 {
   }
 }
 @media screen and (max-width: 500px) {
-  main .contact-us__flex h1 {
+  main .contact-us__flex h2 {
     left: 50px;
   }
 }
 @media only screen and (max-width : 375px) {
-  main .contact-us__flex h1 {
+  main .contact-us__flex h2 {
     left: 25px;
   }
 }
@@ -7979,6 +7985,7 @@ main .contact-us__content {
   color: #3c3c3c;
   line-height: 1.618;
   padding-bottom: 40px;
+  white-space: pre-line;
 }
 @media only screen and (max-width : 990px) {
   main .contact-us__content {

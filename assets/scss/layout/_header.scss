@@ -81,6 +81,8 @@
       font-size: 54px;
       font-weight: bold;
       margin-bottom: 32px;
+      letter-spacing: 5.2px;
+      white-space: pre-line;
       @media #{$info-phone} {
         font-size: 25px;
         margin-bottom: 21px;
@@ -94,6 +96,7 @@
       font-weight: revert;
       line-height: 1.933;
       margin-bottom: 250px;
+      white-space: pre-line;
       @media #{$info-phone} {
         font-size: 12px;
         width: auto;

@@ -25,10 +25,10 @@ main {
         margin: 80px auto;
       }
 
-      h1 {
+      h2 {
         letter-spacing: 3.1px;
         color: rgb(60, 60, 60);
-        background-color: white;
+        background-color: #ffffff;
         width: 419px;
         text-align: center;
         top: -24px;
@@ -63,6 +63,9 @@ main {
       font-weight: 300 ;
       text-align: center;
       line-height: 1.5;
+      .about-us__item {
+        white-space: pre-line;
+      }
       @media #{$info-tablet} {
         margin-left: 20px;
         margin-right: 20px;
@@ -85,27 +88,31 @@ main {
 
   //Services
   .services {
-    position: relative;
-    z-index: 4;
-    img {
-      height: 488px;
-      object-fit: cover;
-      @media #{$info-phone} {
-        height: 380px;
-      }
+    background-image: url("../images/services.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 488px;
+    @media #{$info-phone} {
+      height: 380px;
     }
+    //img {
+    //  height: 488px;
+    //  object-fit: cover;
+    //  @media #{$info-phone} {
+    //    height: 380px;
+    //  }
+    //}
     &__container {
-      position: absolute;
       width: 100%;
-      top: 127px;
+      padding-top: 110px;
       @media #{$info-phone} {
-        top: 80px;
+        padding-top: 80px;
       }
       @media screen and (max-width: 500px) {
-        top: 60px;
+        padding-top: 60px;
       }
       @media #{$info-phone-4} {
-        top: 50px;
+        padding-top: 50px;
       }
     }
 
@@ -113,7 +120,6 @@ main {
       margin: auto;
       border: 2px solid #ffffff;
       width: 874px;
-      z-index: 5;
       color: #ffffff;
       @media #{$info-tablet} {
         width: 626px;
@@ -166,6 +172,9 @@ main {
         margin-top: 25px;
       }
     }
+    &__item {
+      white-space: pre-line;
+    }
 
   }
 
@@ -189,8 +198,8 @@ main {
       @media #{$info-phone-4} {
         width: 300px;
       }
-      h1 {
-        background-color: white;
+      h2 {
+        background-color: #ffffff;
         color: rgb(60, 60, 60);
         width: 419px;
         text-align: center;
@@ -229,8 +238,7 @@ main {
     &__item {
       text-align: center;
       color: rgb(60, 60, 60);
-
-      h2 {
+      h3 {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 20px;
@@ -243,14 +251,15 @@ main {
         font-size: 14px;
         line-height: 1.849;
         font-weight: 300;
+        white-space: pre-line;
         @media #{$info-phone} {
           font-size: 12px;
         }
       }
 
     }
-    &__item--1 {
-      h2 {
+    &__item--01 {
+      h3 {
         margin-bottom: 37px;
       }
       margin-bottom: 105px;
@@ -260,9 +269,9 @@ main {
       @media #{$info-phone} {
       }
     }
-    &__item--2 {
+    &__item--02 {
       margin-bottom: 90px;
-      h2 {
+      h3 {
         margin-bottom: 42px;
       }
       .img-we-02 {
@@ -271,9 +280,9 @@ main {
       @media #{$info-phone} {
       }
     }
-    &__item--3 {
+    &__item--03 {
       margin-bottom: 85px;
-      h2 {
+      h3 {
         margin-bottom: 45px;
       }
       .img-we-03 {
@@ -388,10 +397,10 @@ main {
       @media #{$info-phone-4} {
         width: 300px;
       }
-      h1 {
+      h2 {
         letter-spacing: 3.1px;
         color: rgb(60, 60, 60);
-        background-color: white;
+        background-color: #ffffff;
         width: 419px;
         text-align: center;
         top: -24px;
@@ -437,6 +446,7 @@ main {
       color: rgb(60, 60, 60);
       line-height: 1.618;
       padding-bottom: 40px;
+      white-space: pre-line;
       @media #{$info-tablet} {
         padding-left: 20px;
         padding-right: 20px;
