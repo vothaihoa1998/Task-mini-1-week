@@ -7369,11 +7369,18 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 250px;
 }
 @media only screen and (max-width : 767px) {
   .header__item {
     width: auto;
     padding: 0 10px;
+    margin-bottom: 145px;
+  }
+}
+@media only screen and (max-width : 375px) {
+  .header__item {
+    margin-bottom: 130px;
   }
 }
 .header__item h1 {
@@ -7398,20 +7405,7 @@ img {
   font-size: 15px;
   font-weight: revert;
   line-height: 1.933;
-  margin-bottom: 250px;
   white-space: pre-line;
-}
-@media only screen and (max-width : 767px) {
-  .header__item p {
-    font-size: 12px;
-    width: auto;
-    margin-bottom: 145px;
-  }
-}
-@media only screen and (max-width : 375px) {
-  .header__item p {
-    margin-bottom: 130px;
-  }
 }
 .header__mouse {
   width: 23px;
@@ -7435,7 +7429,7 @@ img {
   background-color: #ffff;
   border-radius: 50%;
   opacity: 1;
-  animation: wheel 2s infinite;
+  animation: wheel 1.5s infinite;
 }
 @media only screen and (max-width : 375px) {
   .header__mouse {
@@ -7545,6 +7539,19 @@ main .about-us__wrap {
 }
 main .about-us__wrap .about-us__item {
   white-space: pre-line;
+}
+@media screen and (max-width: 500px) {
+  main .about-us__wrap .about-us__item {
+    white-space: normal;
+  }
+}
+main .about-us__wrap p {
+  white-space: pre-line;
+}
+@media screen and (max-width: 500px) {
+  main .about-us__wrap p {
+    white-space: normal;
+  }
 }
 @media only screen and (max-width : 990px) {
   main .about-us__wrap {
@@ -7678,6 +7685,11 @@ main .services__content {
 main .services__item {
   white-space: pre-line;
 }
+@media only screen and (max-width : 767px) {
+  main .services__item {
+    white-space: normal;
+  }
+}
 main .we {
   margin: 116px 0 108px 0;
 }
@@ -7772,38 +7784,61 @@ main .we__item p {
   font-size: 14px;
   line-height: 1.849;
   font-weight: 300;
-  white-space: pre-line;
 }
 @media only screen and (max-width : 767px) {
   main .we__item p {
     font-size: 12px;
   }
 }
-main .we__item--01 {
+main .we .we__item-01 {
   margin-bottom: 105px;
 }
-main .we__item--01 h3 {
+main .we .we__item-01 h3 {
   margin-bottom: 37px;
 }
-main .we__item--01 .img-we-01 {
+main .we .we__item-01 p {
+  white-space: pre-line;
+}
+@media only screen and (max-width : 990px) {
+  main .we .we__item-01 p {
+    white-space: normal;
+  }
+}
+main .we .we__item-01 .img-we-01 {
   margin-bottom: 40px;
 }
-main .we__item--02 {
+main .we .we__item-02 {
   margin-bottom: 90px;
 }
-main .we__item--02 h3 {
+main .we .we__item-02 h3 {
   margin-bottom: 42px;
 }
-main .we__item--02 .img-we-02 {
+main .we .we__item-02 p {
+  padding: 0 150px;
+}
+@media only screen and (max-width : 990px) {
+  main .we .we__item-02 p {
+    padding: 0;
+  }
+}
+main .we .we__item-02 .img-we-02 {
   margin-bottom: 38px;
 }
-main .we__item--03 {
+main .we .we__item-03 {
   margin-bottom: 85px;
 }
-main .we__item--03 h3 {
+main .we .we__item-03 h3 {
   margin-bottom: 45px;
 }
-main .we__item--03 .img-we-03 {
+main .we .we__item-03 p {
+  padding: 0 150px;
+}
+@media only screen and (max-width : 990px) {
+  main .we .we__item-03 p {
+    padding: 0;
+  }
+}
+main .we .we__item-03 .img-we-03 {
   margin-bottom: 44px;
 }
 main .list-work {
@@ -7820,31 +7855,21 @@ main .list-work__container {
     grid-template-columns: auto;
   }
 }
-main .list-work__img--01 {
+main .list-work .list-work__img-01 {
   margin-right: 10px;
   margin-bottom: 10px;
 }
 @media only screen and (max-width : 990px) {
-  main .list-work__img--01 {
+  main .list-work .list-work__img-01 {
     margin-right: 0;
     margin-left: 0;
   }
 }
-main .list-work__img--02 {
-  margin-right: 10px;
+main .list-work .list-work__img-02 {
   margin-bottom: 10px;
 }
 @media only screen and (max-width : 990px) {
-  main .list-work__img--02 {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-main .list-work__img--03 {
-  margin-bottom: 10px;
-}
-@media only screen and (max-width : 990px) {
-  main .list-work__img--03 {
+  main .list-work .list-work__img-02 {
     margin-right: 0;
     margin-left: 0;
   }
@@ -7979,13 +8004,11 @@ main .contact-us__flex .btn {
 }
 main .contact-us__content {
   text-align: center;
-  padding-top: 58px;
+  padding: 58px 150px 40px 150px;
   font-size: 16px;
   font-weight: 300;
   color: #3c3c3c;
   line-height: 1.618;
-  padding-bottom: 40px;
-  white-space: pre-line;
 }
 @media only screen and (max-width : 990px) {
   main .contact-us__content {

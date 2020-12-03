@@ -65,6 +65,15 @@ main {
       line-height: 1.5;
       .about-us__item {
         white-space: pre-line;
+        @media screen and (max-width: 500px) {
+          white-space: normal;
+        }
+      }
+      p {
+        white-space: pre-line;
+        @media screen and (max-width: 500px) {
+          white-space: normal;
+        }
       }
       @media #{$info-tablet} {
         margin-left: 20px;
@@ -174,6 +183,9 @@ main {
     }
     &__item {
       white-space: pre-line;
+      @media #{$info-phone} {
+        white-space: normal;
+      }
     }
 
   }
@@ -251,39 +263,54 @@ main {
         font-size: 14px;
         line-height: 1.849;
         font-weight: 300;
-        white-space: pre-line;
         @media #{$info-phone} {
           font-size: 12px;
         }
       }
 
     }
-    &__item--01 {
+    .we__item-01 {
       h3 {
         margin-bottom: 37px;
+      }
+      p {
+        white-space: pre-line;
+        @media #{$info-tablet} {
+          white-space: normal;
+        }
       }
       margin-bottom: 105px;
       .img-we-01 {
         margin-bottom: 40px;
       }
-      @media #{$info-phone} {
-      }
+
     }
-    &__item--02 {
+    .we__item-02 {
       margin-bottom: 90px;
       h3 {
         margin-bottom: 42px;
       }
+      p {
+        padding: 0 150px;
+        @media #{$info-tablet} {
+          padding: 0;
+        }
+      }
       .img-we-02 {
         margin-bottom: 38px;
       }
-      @media #{$info-phone} {
-      }
+
     }
-    &__item--03 {
+    .we__item-03 {
       margin-bottom: 85px;
       h3 {
         margin-bottom: 45px;
+      }
+      p {
+        padding: 0 150px;
+        @media #{$info-tablet} {
+          padding: 0;
+        }
       }
       .img-we-03 {
         margin-bottom: 44px;
@@ -306,7 +333,7 @@ main {
         grid-template-columns: auto ;
       }
     }
-    &__img--01 {
+    .list-work__img-01 {
       margin-right: 10px;
       margin-bottom: 10px;
       @media #{$info-tablet} {
@@ -314,15 +341,8 @@ main {
         margin-left: 0;
       }
     }
-    &__img--02 {
-      margin-right: 10px;
-      margin-bottom: 10px;
-      @media #{$info-tablet} {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-    &__img--03 {
+
+    .list-work__img-02 {
       margin-bottom: 10px;
       @media #{$info-tablet} {
         margin-right: 0;
@@ -440,13 +460,11 @@ main {
 
     &__content {
       text-align: center;
-      padding-top: 58px;
+      padding: 58px 150px 40px 150px;
       font-size: 16px;
       font-weight: 300;
       color: rgb(60, 60, 60);
       line-height: 1.618;
-      padding-bottom: 40px;
-      white-space: pre-line;
       @media #{$info-tablet} {
         padding-left: 20px;
         padding-right: 20px;

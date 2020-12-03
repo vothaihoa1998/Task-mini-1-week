@@ -73,10 +73,16 @@
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
+    margin-bottom: 250px;
     @media #{$info-phone} {
       width: auto;
       padding: 0 10px;
+      margin-bottom:145px;
     }
+    @media #{$info-phone-4} {
+      margin-bottom: 130px;
+    }
+
     h1 {
       font-size: 54px;
       font-weight: bold;
@@ -95,16 +101,7 @@
       font-size: 15px;
       font-weight: revert;
       line-height: 1.933;
-      margin-bottom: 250px;
       white-space: pre-line;
-      @media #{$info-phone} {
-        font-size: 12px;
-        width: auto;
-        margin-bottom:145px;
-      }
-      @media #{$info-phone-4} {
-        margin-bottom: 130px;
-      }
     }
   }
   &__mouse {
@@ -128,7 +125,7 @@
       background-color: #ffff;
       border-radius: 50%;
       opacity: 1;
-      animation: wheel 2s infinite;
+      animation: wheel 1.5s infinite;
     }
     @media #{$info-phone-4} {
       width: 15px;
